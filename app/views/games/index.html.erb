@@ -1,0 +1,5 @@
+<h2>Were you caught wearing the Wrong Teams Colors at one of these games?</h2>
+
+<% @games.each do | game | %>
+  <p><%= game.away_team  %> vs. <%= game.home_team  %> at <%= game.location  %></p>
+<% end %>
