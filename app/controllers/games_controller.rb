@@ -17,7 +17,7 @@ class GamesController < ActionController::Base
   def show
     game = Game.find_by_id(params[:id])
     @photos = Photo.where(game_id: game.id).order("created_at DESC")
-    render json: game
+    # render json: game
   end
 
   def update

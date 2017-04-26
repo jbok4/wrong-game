@@ -1,5 +1,24 @@
-<h2>Were you caught wearing the Wrong Teams Colors at one of these games?</h2>
+<div class="header">
+  <h2>Were you caught wearing the Wrong Teams Colors<br>at one of these games?</h2>
+</div>
+
 
 <% @games.each do | game | %>
   <p><%= game.away_team  %> vs. <%= game.home_team  %> at <%= game.location  %></p>
 <% end %>
+
+
+<style>
+body {background: #ccc;}
+  
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    color: white;
+  }
+
+p {text-align: center;}
+
+.header { height: 100px; background: black; width: 100%;}
+</style>
